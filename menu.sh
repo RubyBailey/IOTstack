@@ -46,6 +46,7 @@ function minimum_version_check() {
 	
 	VERSION_GOOD="Unknown"
 
+        # non empty digits only
 	NUMB_REG='^[0-9]+$'
 	if ! [[ $CURR_VERSION_MAJOR =~ $NUMB_REG ]] ; then
 		echo "$VERSION_GOOD"
